@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function App() {
+import Home from "./screens/Home";
+import Register from "./screens/Register";
+import Login from "./screens/Login";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        {/* Public Route Available to all users */}
+        <Route exact path="/" component={Home} />
+        <Route path="/register" component={Register} />
+        <Route path="/login" component={Login} />
+        {/* <Route path="/lender/view-campaign/2" component={PaymentPage} /> */}
+
+        {/* Private Route available to only authenticated User */}
+        {/* <PrivateRoute path="/dashboard" component={Dashboard} />
+      <PrivateRoute path="/new-resume" component={New_resume} />
+      <PrivateRoute path="/template-a" component={TemplateA} /> */}
+
+        {/* Error 404 - Page Not Found */}
+        {/* <Route path="*" component={Error404} /> */}
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
