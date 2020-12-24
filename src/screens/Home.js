@@ -1,5 +1,4 @@
 import React from "react";
-
 import HomeNav from "../components/home-navbar/HomeNav";
 import {
   StyledHome,
@@ -40,8 +39,8 @@ import Doc2 from "../assets/doc2.png";
 import Msword from "../assets/ms-word.png";
 import Pdf from "../assets/pdf.png";
 import Pdf2 from "../assets/pdf2.png";
-import ResumeCarousel from "../components/resume-carousel/ResumeCarousel";
-import Footer from "../components/footer/Footer";
+// import ResumeCarousel from "../components/resume-carousel/ResumeCarousel";
+// import Footer from "../components/footer/Footer";
 
 function Home() {
   return (
