@@ -3,7 +3,7 @@ import tw, { styled } from "twin.macro";
 export const StyledHome = styled.main`
   & {
     padding: 0 8.47% 0 8.47%;
-    margin-top: 300px;
+    margin-top: 158.5px;
     color: #595959;
   }
 `;
